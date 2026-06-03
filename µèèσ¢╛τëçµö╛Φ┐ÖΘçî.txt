@@ -1,0 +1,7 @@
+把你的作品图片直接丢进这个 gallery 文件夹就行。
+- 支持 jpg / jpeg / png / webp / gif / avif
+- 文件名随便起（建议用英文/数字，避免特殊符号）
+- 推送到 GitHub 后会自动出现在网站上：
+    · 主页只显示最近上传的几张
+    · 完整的 gallery.html 页面显示全部
+不需要手动改代码。manifest.json 由 GitHub Action 自动生成，别手动编辑。
