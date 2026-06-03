@@ -115,8 +115,10 @@
     </div>
     <div class="feat reveal">
       <div class="feat-media">
-        <!-- 替换封面：把 src 改成 你的文件名.jpg（目前用的是 Steam 商店图） -->
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/3518380/header.jpg" alt="Myth of Lumi" onerror="this.style.display='none'">
+        <!-- 真封面：把一张图命名为 myth-of-lumi.jpg 放进仓库根目录即可显示；没有时下面会显示标题色块 -->
+        <div class="ph">Myth of Lumi</div>
+        <img src="myth-of-lumi.jpg" alt="Myth of Lumi"
+             onerror="if(!this.dataset.s){this.dataset.s=1;this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/3518380/header.jpg';}else{this.remove();}">
       </div>
       <div class="feat-body">
         <div class="feat-flag" data-en="USC Advanced Game Production · 2025" data-zh="USC 高级游戏制作 · 2025">USC Advanced Game Production · 2025</div>
@@ -348,7 +350,7 @@
       <div>
         <div class="edu-block">
           <div class="ed-school">University of Southern California</div>
-          <div class="ed-deg" data-en="B.S. Game Development &amp; Interactive Design · Minor in Entrepreneurship" data-zh="游戏开发与交互设计 本科 · 辅修 创业学">B.S. Game Development &amp; Interactive Design · Minor in Entrepreneurship</div>
+          <div class="ed-deg" data-en="BFA in Game Development &amp; Interactive Design · Minor in Entrepreneurship" data-zh="游戏开发与交互设计 BFA · 辅修 创业学">BFA in Game Development &amp; Interactive Design · Minor in Entrepreneurship</div>
           <div class="ed-when" data-en="2023.08 – 2026.12 (expected)" data-zh="2023.08 – 2026.12（预计毕业）">2023.08 – 2026.12 (expected)</div>
         </div>
         <div class="edu-block">
