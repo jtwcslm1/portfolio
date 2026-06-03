@@ -72,7 +72,7 @@
   document.querySelectorAll('.reveal, .stagger').forEach(function (el) { io.observe(el); });
 
   /* =================== AUTO GALLERY =================== */
-  var HOME_SHAPES = ['shot circle', 'shot arch tilt-r', 'shot blob', 'shot wide', 'shot circle tilt-l', 'shot arch'];
+  // homepage tiles: uniform rounded squares (wide images crop to centre)
 
   function makeImg(name) {
     var img = document.createElement('img');
@@ -102,7 +102,7 @@
     }
     list.slice(0, n).forEach(function (name, i) {
       var fig = document.createElement('div');
-      fig.className = HOME_SHAPES[i % HOME_SHAPES.length];
+      fig.className = 'shot';
       fig.appendChild(makeImg(name));
       box.appendChild(fig);
     });
