@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yutong "Leila" Li — Game Designer · Producer · Artist</title>
+<meta name="description" content="Yutong (Leila) Li — USC Game Development & Interactive Design. Game design, production & publishing, and game art. Shipped on Steam & Epic.">
+<meta property="og:title" content="Yutong 'Leila' Li — Game Designer · Producer · Artist">
+<meta property="og:description" content="USC Game Development & Interactive Design. Design · Production & Publishing · Art.">
+<meta property="og:type" content="website">
+
+<!-- Fonts: Playfair Display (display) · DM Sans (body) · Caveat (script accent) · Noto Serif/Sans SC -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;0,900;1,500;1,700;1,800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Caveat:wght@500;700&family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background: drifting low-sat blobs + frosted grain -->
+<div class="bg-blobs"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+<div class="grain"></div>
+
+<nav id="nav">
+  <a class="brand" href="#top"><span class="dot"></span>Yutong&nbsp;Li</a>
+  <div class="nav-links">
+    <a href="#tracks" data-en="What I Do" data-zh="方向">What I Do</a>
+    <a href="#featured" data-en="Featured" data-zh="代表作">Featured</a>
+    <a href="#work" data-en="Work" data-zh="作品">Work</a>
+    <a href="#about" data-en="Experience" data-zh="经历">Experience</a>
+    <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+    <button class="lang-btn" id="langBtn" onclick="toggleLang()">中文</button>
+  </div>
+</nav>
+
+<div id="top"></div>
+<header>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow h-anim d1"><span data-en="Game Developer · USC Class of 2026" data-zh="游戏开发者 · 南加大 2026 届">Game Developer · USC Class of 2026</span></div>
+        <h1 class="name h-anim d2">Yutong <span class="accent">&ldquo;Leila&rdquo;</span> Li<span class="zh">李毓桐</span></h1>
+        <div class="roles h-anim d3">
+          <span class="role" data-en="Game Design" data-zh="游戏策划">Game Design</span>
+          <span class="role" data-en="Production &amp; Publishing" data-zh="运营 · 发行 · 项目管理">Production &amp; Publishing</span>
+          <span class="role" data-en="Game Art" data-zh="游戏美术">Game Art</span>
+        </div>
+        <p class="lede h-anim d4" data-en="I build games end-to-end — designing systems, shipping titles to Steam &amp; Epic, and crafting the art that gives them a soul. 12+ game jams, 20+ published prototypes, one game live on Steam." data-zh="我做游戏的全流程——从系统策划，到把作品发行上线 Steam 与 Epic，再到为它注入灵魂的美术。参与 12+ Game Jam，发布 20+ 原型，一款作品已正式登陆 Steam。">I build games end-to-end — designing systems, shipping titles to Steam &amp; Epic, and crafting the art that gives them a soul. 12+ game jams, 20+ published prototypes, one game live on Steam.</p>
+        <div class="cta h-anim d5">
+          <a class="btn primary" href="#featured" data-en="View My Work" data-zh="查看作品">View My Work</a>
+          <a class="btn ghost" href="mailto:luuuuuucio@gmail.com" data-en="Get in Touch" data-zh="联系我">Get in Touch</a>
+        </div>
+      </div>
+      <div class="portrait-col h-anim d3">
+        <div class="portrait">
+          <!-- 替换头像：把更高清的图片命名为 profile.jpg 放在同一文件夹即可 -->
+          <img src="profile.jpg" alt="Yutong Leila Li portrait">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="false">
+  <div class="mq"><span data-en="Game Design" data-zh="游戏策划">Game Design</span><span data-en="Production" data-zh="运营发行">Production</span><span data-en="Publishing" data-zh="项目管理">Publishing</span><span data-en="Game Art" data-zh="游戏美术">Game Art</span><span data-en="Shipped on Steam &amp; Epic" data-zh="已登陆 Steam 与 Epic">Shipped on Steam &amp; Epic</span><span data-en="Game Design" data-zh="游戏策划">Game Design</span><span data-en="Production" data-zh="运营发行">Production</span><span data-en="Publishing" data-zh="项目管理">Publishing</span><span data-en="Game Art" data-zh="游戏美术">Game Art</span><span data-en="Shipped on Steam &amp; Epic" data-zh="已登陆 Steam 与 Epic">Shipped on Steam &amp; Epic</span></div>
+</div>
+
+
+<!-- ============ 01 TRACKS ============ -->
+<section id="tracks">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <div>
+        <h2 data-en="Three ways I can help your team" data-zh="我能为团队带来的三种价值">Three ways I can help your team</h2>
+        <p class="sec-sub" data-en="A rare full-stack profile across the game pipeline — equally at home writing a design doc, running a launch, or painting a key visual." data-zh="一份覆盖游戏管线的复合背景——写策划案、跑发行、画美术，都能上手。">A rare full-stack profile across the game pipeline — equally at home writing a design doc, running a launch, or painting a key visual.</p>
+      </div>
+    </div>
+    <div class="tracks stagger">
+      <div class="track" style="--accent:rgba(203,79,87,.16)">
+        <div class="tnum">01</div>
+        <h3 data-en="Game Design" data-zh="游戏策划">Game Design</h3>
+        <div class="tzh">游戏策划 / 系统 · 数值 · 关卡</div>
+        <p data-en="Full-cycle design from concept to execution: core systems, economy &amp; number frameworks, balancing, level pacing and interaction logic. I write GDDs, number tables, and level docs, and iterate fast across disciplines." data-zh="从概念到执行的全周期策划：核心系统、数值框架与平衡、关卡节奏与交互逻辑。独立撰写 GDD、数值表、关卡设计稿，敏捷迭代、跨职能协作。">Full-cycle design from concept to execution: core systems, economy &amp; number frameworks, balancing, level pacing and interaction logic. I write GDDs, number tables, and level docs, and iterate fast across disciplines.</p>
+        <div class="tags"><span class="tag">GDD</span><span class="tag">Systems</span><span class="tag">Economy / Numbers</span><span class="tag">Level Design</span><span class="tag">Balancing</span></div>
+      </div>
+      <div class="track" style="--accent:rgba(127,151,182,.18)">
+        <div class="tnum">02</div>
+        <h3 data-en="Production &amp; Publishing" data-zh="运营 · 发行 · 项目管理">Production &amp; Publishing</h3>
+        <div class="tzh">运营 · 发行 · 项目管理</div>
+        <p data-en="I shipped a title to Steam &amp; Epic as Marketing Lead — owning launch, community, store relations and milestones. Plus commercialization &amp; LiveOps: acquisition, retention, monetization, A/B testing and KPI / ROI analysis." data-zh="作为 Marketing Lead 把一款作品发行上线 Steam 与 Epic——统筹发行、社群、商店对接与里程碑管理。同时具备商业化与运营能力：获客、留存、变现、A/B 测试、KPI / ROI 分析。">I shipped a title to Steam &amp; Epic as Marketing Lead — owning launch, community, store relations and milestones. Plus commercialization &amp; LiveOps: acquisition, retention, monetization, A/B testing and KPI / ROI analysis.</p>
+        <div class="tags"><span class="tag">Steam / Epic Launch</span><span class="tag">Milestones</span><span class="tag">LiveOps</span><span class="tag">A/B Testing</span><span class="tag">KPI / ROI</span></div>
+      </div>
+      <div class="track" style="--accent:rgba(154,124,112,.16)">
+        <div class="tnum">03</div>
+        <h3 data-en="Game Art" data-zh="游戏美术">Game Art</h3>
+        <div class="tzh">游戏美术 / 概念 · 3D · UI · 插画</div>
+        <p data-en="Art across 20+ prototypes — concept, stylized 3D (Maya, ZBrush), UI / UX (Figma) and illustration (Procreate, Photoshop). I shape the visual identity and mood that make a game feel like itself." data-zh="为 20+ 原型负责美术——概念设计、风格化 3D（Maya、ZBrush）、UI/UX（Figma）、插画（Procreate、Photoshop）。塑造让游戏有辨识度的视觉气质与氛围。">Art across 20+ prototypes — concept, stylized 3D (Maya, ZBrush), UI / UX (Figma) and illustration (Procreate, Photoshop). I shape the visual identity and mood that make a game feel like itself.</p>
+        <div class="tags"><span class="tag">Concept</span><span class="tag">3D / Maya</span><span class="tag">ZBrush</span><span class="tag">UI &middot; Figma</span><span class="tag">Illustration</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 FEATURED ============ -->
+<section id="featured">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <div>
+        <h2 data-en="Featured — shipped on Steam &amp; Epic" data-zh="代表作 — 已登陆 Steam 与 Epic">Featured — shipped on Steam &amp; Epic</h2>
+      </div>
+    </div>
+    <div class="feat reveal">
+      <div class="feat-media">
+        <!-- 替换封面：把 src 改成 你的文件名.jpg（目前用的是 Steam 商店图） -->
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/3518380/header.jpg" alt="Myth of Lumi" onerror="this.style.display='none'">
+      </div>
+      <div class="feat-body">
+        <div class="feat-flag" data-en="USC Advanced Game Production · 2025" data-zh="USC 高级游戏制作 · 2025">USC Advanced Game Production · 2025</div>
+        <h3>Myth of Lumi</h3>
+        <div class="feat-role" data-en="Marketing Lead · Publishing &amp; Launch" data-zh="Marketing Lead · 发行与上线负责人">Marketing Lead · Publishing &amp; Launch</div>
+        <p data-en="A 3D physics-based card-throwing magic duel set in the underground city of Prospera. I led the entire release &amp; marketing track — community, store positioning and IP visuals — reporting directly to the Producer and Director, and served as USC Game Publishing Association liaison with the Steam / Epic stores and external art teams to take the game live." data-zh="一款以地下城市 Prospera 为舞台、基于 3D 物理的卡牌投掷魔法对战游戏。我统筹整个发行与推广模块——社群运营、商店定位、IP 视觉，直接对接 Producer 与 Director，并作为 USC Game Publishing Association 对接人，协调 Steam / Epic 商店与外部美术团队，完成上线全流程。">A 3D physics-based card-throwing magic duel set in the underground city of Prospera. I led the entire release &amp; marketing track — community, store positioning and IP visuals — reporting directly to the Producer and Director, and served as USC Game Publishing Association liaison with the Steam / Epic stores and external art teams to take the game live.</p>
+        <div class="stats">
+          <div class="stat"><div class="n" data-count="89" data-suffix="%">89%</div><div class="l" data-en="Positive reviews" data-zh="好评率">Positive reviews</div></div>
+          <div class="stat"><div class="n" data-count="2">2</div><div class="l" data-en="Platforms (Steam + Epic)" data-zh="平台（Steam+Epic）">Platforms (Steam + Epic)</div></div>
+          <div class="stat"><div class="n" data-en="Live" data-zh="已上线">Live</div><div class="l" data-en="Released &amp; playable" data-zh="已发布上线">Released &amp; playable</div></div>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="https://store.steampowered.com/app/3518380/Myth_of_Lumi/" target="_blank" rel="noopener" data-en="Play on Steam ↗" data-zh="在 Steam 试玩 ↗">Play on Steam ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 WORK ============ -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <div>
+        <h2 data-en="Selected work" data-zh="精选作品">Selected work</h2>
+        <p class="sec-sub" data-en="From 48-hour jams to club projects — design, programming and art. 2,000+ plays on itch.io." data-zh="从 48 小时 Game Jam 到社团项目——策划、编程与美术。itch.io 累计点击 2,000+。">From 48-hour jams to club projects — design, programming and art. 2,000+ plays on itch.io.</p>
+      </div>
+    </div>
+    <!--
+      想加 / 换作品封面：每张 .work-cover 里放一个 <img src="你的图片.jpg">。
+      没有图片时会自动显示下面 .ph 的彩色占位块。
+    -->
+    <div class="works stagger">
+
+      <a class="work" href="https://jtwcslm.itch.io/what-the-moon-brings" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#3a3550;--c2:#1c1a26">What the Moon Brings</div>
+          <img src="https://img.itch.zone/aW1nLzEzOTQzMDMwLmpwZw==/original/gAOcov.jpg" alt="What the Moon Brings" loading="lazy" onerror="this.remove()"></div>
+        <div class="work-body">
+          <h4>What the Moon Brings</h4>
+          <div class="work-meta">USC MEGA Game Jam · 2023 · <span data-en="1st Place" data-zh="一等奖">1st Place</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span><span class="tag" data-en="Programming" data-zh="编程">Programming</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://jtwcslm.itch.io/summon" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#2c4a4a;--c2:#152222">Summon</div>
+          <img src="https://img.itch.zone/aW1nLzE1NzcyMDAzLnBuZw==/original/AVBuLZ.png" alt="Summon" loading="lazy" onerror="this.remove()"></div>
+        <div class="work-body">
+          <h4>Summon</h4>
+          <div class="work-meta">Ludum Dare · 2024 · <span data-en="First-person 3D puzzle" data-zh="第一人称 3D 解谜">First-person 3D puzzle</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span><span class="tag" data-en="Programming" data-zh="编程">Programming</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://jtwcslm.itch.io/spiderdog" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#4a3a35;--c2:#231a17">Spiderdog</div>
+          <img src="https://img.itch.zone/aW1nLzE1MDI3ODM2LnBuZw==/original/xKK9WB.png" alt="Spiderdog" loading="lazy" onerror="this.remove()"></div>
+        <div class="work-body">
+          <h4>Spiderdog</h4>
+          <div class="work-meta">Global Game Jam · 2024 · <span data-en="3D boss battler · smile-detection AI" data-zh="3D Boss 战 · 微笑识别 AI">3D boss battler · smile-detection AI</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span><span class="tag" data-en="Programming" data-zh="编程">Programming</span><span class="tag" data-en="Art" data-zh="美术">Art</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://jtwcslm.itch.io/mutant-clash" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#35415a;--c2:#181d28">Mutant Clash</div>
+          <img src="https://img.itch.zone/aW1nLzIwNDU5MDIzLnBuZw==/original/YjYPbV.png" alt="Mutant Clash" loading="lazy" onerror="this.remove()"></div>
+        <div class="work-body">
+          <h4>Mutant Clash</h4>
+          <div class="work-meta"><span data-en="Independent · 2024 · Card battler" data-zh="独立项目 · 2024 · 卡牌对战">Independent · 2024 · Card battler</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span><span class="tag" data-en="Art" data-zh="美术">Art</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://jtwcslm.itch.io/cross-planar-pandemonium" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#4a3540;--c2:#23191e">Cross-Planar Pandemonium</div>
+          <img src="https://img.itch.zone/aW1nLzEyNzI2NDkzLnBuZw==/original/hB9bs9.png" alt="Cross-Planar Pandemonium" loading="lazy" onerror="this.remove()"></div>
+        <div class="work-body">
+          <h4>Cross-Planar Pandemonium</h4>
+          <div class="work-meta">GMTK Game Jam · 2023 · <span data-en="3D role-reverse RPG" data-zh="3D 角色反转 RPG">3D role-reverse RPG</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span><span class="tag" data-en="Art" data-zh="美术">Art</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://chloexiiyan.itch.io/paradoxide" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#2f4a40;--c2:#15221d">Paradoxide</div></div>
+        <div class="work-body">
+          <h4>Paradoxide</h4>
+          <div class="work-meta">Climate Jam · <span data-en="Rated 4.25 / 5" data-zh="评分 4.25 / 5">Rated 4.25 / 5</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span><span class="tag" data-en="Programming" data-zh="编程">Programming</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://lz1c.itch.io/block-by-block" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#4a4030;--c2:#231e16">Block by Block</div></div>
+        <div class="work-body">
+          <h4>Block by Block</h4>
+          <div class="work-meta">GMTK Game Jam · 2024 · <span data-en="Merge &amp; build" data-zh="合成建造">Merge &amp; build</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://ldjam.com/events/ludum-dare/54/torch" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#4a3a30;--c2:#231b16">Torch</div></div>
+        <div class="work-body">
+          <h4>Torch</h4>
+          <div class="work-meta">Ludum Dare 54 · 2023 · <span data-en="Limited space, limited light" data-zh="有限空间 · 有限光">Limited space, limited light</span></div>
+          <div class="work-roles"><span class="tag" data-en="Design" data-zh="策划">Design</span></div>
+          <span class="work-link" data-en="View ↗" data-zh="查看 ↗">View ↗</span>
+        </div>
+      </a>
+
+      <a class="work" href="https://jtwcslm.itch.io/" target="_blank" rel="noopener">
+        <div class="work-cover"><div class="ph" style="--c1:#33384a;--c2:#181b24;font-size:1.05rem"><span data-en="20+ more on itch.io ↗" data-zh="itch.io 上还有 20+ 作品 ↗">20+ more on itch.io ↗</span></div></div>
+        <div class="work-body">
+          <h4 data-en="The full library" data-zh="全部作品库">The full library</h4>
+          <div class="work-meta">jtwcslm.itch.io</div>
+          <div class="work-roles"><span class="tag">itch.io</span></div>
+          <span class="work-link" data-en="Browse ↗" data-zh="浏览 ↗">Browse ↗</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 GALLERY (drop your art / screenshots here) ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <div>
+        <h2 data-en="Art &amp; gallery" data-zh="美术与画廊">Art &amp; gallery</h2>
+        <p class="sec-sub" data-en="Concept art, 3D, UI and screenshots — a few of the latest below." data-zh="概念设计、3D、UI 与游戏截图——下面是最近上传的几张。">Concept art, 3D, UI and screenshots — a few of the latest below.</p>
+      </div>
+    </div>
+    <!-- Images load automatically from the gallery/ folder (newest few). Full set on gallery.html -->
+    <div class="gallery stagger" id="home-gallery" data-count="6"></div>
+    <div class="gallery-cta">
+      <a class="btn primary" href="gallery.html" data-en="View the full gallery →" data-zh="查看全部作品 →">View the full gallery →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 EXPERIENCE ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <div><h2 data-en="Experience" data-zh="工作与项目经历">Experience</h2></div>
+    </div>
+
+    <div class="reveal">
+      <div class="exp-item">
+        <div class="exp-when">2025.07 – 2025.08</div>
+        <div>
+          <div class="exp-org">Kuaishou Technology / 快手科技</div>
+          <div class="exp-role" data-en="Commercialization Dept. — Client Operations Intern (Emerging Beauty)" data-zh="商业化部门 — 客户运营实习生（新锐美妆）">Commercialization Dept. — Client Operations Intern (Emerging Beauty)</div>
+          <p data-en="&lt;span class='hi'&gt;Built a Python + Excel automation for GMV reporting → 5× faster.&lt;/span&gt; Ran client operations analysis, reviewed creative assets and optimized campaign performance, smoothing cross-team collaboration with actionable reports." data-zh="&lt;span class='hi'&gt;用 Python + Excel 把 GMV（商品交易额）报告自动化 → 效率提升 5 倍。&lt;/span&gt; 负责客户运营分析、审核创意素材、优化活动效果，改善跨团队协作并产出可落地的分析报告。"><span class="hi">Built a Python + Excel automation for GMV reporting → 5× faster.</span> Ran client operations analysis, reviewed creative assets and optimized campaign performance, smoothing cross-team collaboration with actionable reports.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-when">2024 – 2025</div>
+        <div>
+          <div class="exp-org">USC Advanced Game Production — Myth of Lumi</div>
+          <div class="exp-role" data-en="Marketing Lead · Publishing &amp; Launch" data-zh="Marketing Lead · 发行与上线负责人">Marketing Lead · Publishing &amp; Launch</div>
+          <p data-en="Led the release &amp; marketing module for the year-long studio project: marketing, community, platform release and IP visual direction. Hit USC's milestone gates, reported to Producer &amp; Director, and acted as Game Publishing Association liaison with Steam / Epic and outside art teams. Now live on Steam &amp; Epic." data-zh="统筹这一年度工作室项目的发行与推广模块：市场营销、社群运营、平台发布与 IP 视觉定位。达成 USC 各阶段里程碑，直接对接 Producer 与 Director，并作为 Game Publishing Association 对接人协调 Steam / Epic 与外部美术团队。现已上线 Steam 与 Epic。">Led the release &amp; marketing module for the year-long studio project: marketing, community, platform release and IP visual direction. Hit USC's milestone gates, reported to Producer &amp; Director, and acted as Game Publishing Association liaison with Steam / Epic and outside art teams. Now live on Steam &amp; Epic.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-when">2023 – 2025</div>
+        <div>
+          <div class="exp-org" data-en="12+ Game Jams &amp; Independent Projects" data-zh="12+ Game Jam 与独立项目">12+ Game Jams &amp; Independent Projects</div>
+          <div class="exp-role" data-en="Design · Programming · Art · Marketing" data-zh="策划 · 编程 · 美术 · 营销">Design · Programming · Art · Marketing</div>
+          <p data-en="Key roles across 12+ game jams (MEGA, GMTK, Ludum Dare, Global Game Jam, Climate Jam) and 20+ published prototypes — shipping design, code and art under tight deadlines, with 2,000+ total plays on itch.io." data-zh="在 12+ Game Jam（MEGA、GMTK、Ludum Dare、Global Game Jam、Climate Jam）及 20+ 已发布原型中担任关键角色——在高压 deadline 下交付策划、代码与美术，itch.io 累计点击 2,000+。">Key roles across 12+ game jams (MEGA, GMTK, Ludum Dare, Global Game Jam, Climate Jam) and 20+ published prototypes — shipping design, code and art under tight deadlines, with 2,000+ total plays on itch.io.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 SKILLS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">06</span>
+      <div><h2 data-en="Tools &amp; skills" data-zh="技能与工具">Tools &amp; skills</h2></div>
+    </div>
+    <div class="skills reveal">
+      <div class="skill-row"><div class="k" data-en="Engines" data-zh="引擎">Engines</div><div class="v"><b>Unity</b>, Unreal Engine</div></div>
+      <div class="skill-row"><div class="k" data-en="Programming" data-zh="编程">Programming</div><div class="v"><b>C#</b>, C++, Python, Java</div></div>
+      <div class="skill-row"><div class="k" data-en="Art" data-zh="美术">Art</div><div class="v">Maya, ZBrush, Photoshop, Figma, Procreate</div></div>
+      <div class="skill-row"><div class="k" data-en="Version Control" data-zh="版本控制">Version Control</div><div class="v"><b>Perforce</b> (2 yrs), Git</div></div>
+      <div class="skill-row"><div class="k" data-en="Production" data-zh="项目协作">Production</div><div class="v">Miro, Notion, Trello, Slack, Office, Google Docs</div></div>
+      <div class="skill-row"><div class="k" data-en="Analytics" data-zh="数据分析">Analytics</div><div class="v">Sensor Tower · A/B testing · CPC / CPM / ROI · KPI</div></div>
+      <div class="skill-row"><div class="k" data-en="Publishing" data-zh="发行">Publishing</div><div class="v">Steamworks, App Store submit &amp; cert, TestFlight, localization, multi-platform</div></div>
+      <div class="skill-row"><div class="k" data-en="Languages" data-zh="语言">Languages</div><div class="v">English (TOEFL 105), Mandarin, Cantonese</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 AWARDS / EDUCATION ============ -->
+<section id="more">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">07</span>
+      <div><h2 data-en="Awards &amp; education" data-zh="奖项与教育">Awards &amp; education</h2></div>
+    </div>
+    <div class="two-col reveal">
+      <div>
+        <div class="li"><span class="mk">&#9733;</span><span><b>Jon M. Chu APAA Cinematic Arts Scholarship</b></span></div>
+        <div class="li"><span class="mk">&#9733;</span><span><b>USC Karen B. Wong &amp; Scott W. Lee Leadership Endowed Scholarship</b></span></div>
+        <div class="li"><span class="mk">01</span><span data-en="USC MEGA 48-hour Game Jam — &lt;b&gt;1st Place&lt;/b&gt; (design &amp; programming)" data-zh="USC MEGA 48 小时游戏制作比赛 — &lt;b&gt;一等奖&lt;/b&gt;（策划 &amp; 编程）">USC MEGA 48-hour Game Jam — <b>1st Place</b> (design &amp; programming)</span></div>
+        <div class="li"><span class="mk">02</span><span data-en="Global Youth Entrepreneurship Competition (Shanghai, 2020) — &lt;b&gt;National Champion&lt;/b&gt;, marketing pitch · team National Runner-up" data-zh="2020 全球青年创业大赛上海站 — &lt;b&gt;营销展示全国冠军&lt;/b&gt; · 团队总成绩全国亚军">Global Youth Entrepreneurship Competition (Shanghai, 2020) — <b>National Champion</b>, marketing pitch · team National Runner-up</span></div>
+        <div class="li"><span class="mk">03</span><span data-en="Conrad Innovation Challenge China Finals (2021) — &lt;b&gt;Best Innovation Award&lt;/b&gt;" data-zh="2021 康莱德创新挑战赛中国赛决赛 — &lt;b&gt;最佳创新奖&lt;/b&gt;">Conrad Innovation Challenge China Finals (2021) — <b>Best Innovation Award</b></span></div>
+        <div class="li"><span class="mk">04</span><span data-en="JEA China Campus Media Awards (2022) — &lt;b&gt;Excellence in Drawing&lt;/b&gt;" data-zh="2022 JEA China 校园传媒作品年度评选 — &lt;b&gt;卓越绘画奖&lt;/b&gt;">JEA China Campus Media Awards (2022) — <b>Excellence in Drawing</b></span></div>
+        <div class="li"><span class="mk">05</span><span data-en="NEC China Finals 2021 (Advanced) — &lt;b&gt;Top 25% nationally&lt;/b&gt; · FSSM China Finals — Team 2nd" data-zh="NEC 全美经济学挑战 2021 中国决赛（AS 组）— &lt;b&gt;全国前 25%&lt;/b&gt; · FSSM 中国区决赛 — 团队二等奖">NEC China Finals 2021 (Advanced) — <b>Top 25% nationally</b> · FSSM China Finals — Team 2nd</span></div>
+      </div>
+      <div>
+        <div class="edu-block">
+          <div class="ed-school">University of Southern California</div>
+          <div class="ed-deg" data-en="B.S. Game Development &amp; Interactive Design · Minor in Entrepreneurship" data-zh="游戏开发与交互设计 本科 · 辅修 创业学">B.S. Game Development &amp; Interactive Design · Minor in Entrepreneurship</div>
+          <div class="ed-when" data-en="2023.08 – 2026.12 (expected)" data-zh="2023.08 – 2026.12（预计毕业）">2023.08 – 2026.12 (expected)</div>
+        </div>
+        <div class="edu-block">
+          <div class="ed-school">New York University</div>
+          <div class="ed-deg" data-en="Spring Game Course" data-zh="春季游戏课程">Spring Game Course</div>
+          <div class="ed-when">2022.02 – 2022.05</div>
+        </div>
+        <div class="edu-block">
+          <div class="ed-school" data-en="English Proficiency" data-zh="英语水平">English Proficiency</div>
+          <div class="ed-deg" data-en="TOEFL 105 · Proficient academic &amp; professional writing" data-zh="托福 105 · 学术与专业写作熟练">TOEFL 105 · Proficient academic &amp; professional writing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 CONTACT ============ -->
+<section id="contact">
+  <div class="wrap contact reveal">
+    <div class="sec-num" style="margin-bottom:18px">08 / <span data-en="LET'S TALK" data-zh="联系我">LET'S TALK</span></div>
+    <div class="big" data-en="Open to game design, production &amp; art roles." data-zh="求职中：游戏策划 · 运营发行 · 美术。">Open to game design, production &amp; art roles.</div>
+    <p style="color:var(--muted);max-width:46ch;margin:0 auto" data-en="Graduating December 2026. If you're building something worth playing, let's talk." data-zh="2026 年 12 月毕业。如果你正在做一款值得一玩的游戏，欢迎联系我。">Graduating December 2026. If you're building something worth playing, let's talk.</p>
+    <div class="big" style="margin-top:18px"><a href="mailto:luuuuuucio@gmail.com">luuuuuucio@gmail.com</a></div>
+    <div class="socials">
+      <a href="https://store.steampowered.com/app/3518380/Myth_of_Lumi/" target="_blank" rel="noopener">Steam ↗</a>
+      <a href="https://jtwcslm.itch.io/" target="_blank" rel="noopener">itch.io ↗</a>
+      <a href="https://www.instagram.com/jtwcslm_on" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="mailto:luuuuuucio@gmail.com" data-en="Email ↗" data-zh="邮件 ↗">Email ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr"></span> Yutong &ldquo;Leila&rdquo; Li · 李毓桐 · <span data-en="Designed for play." data-zh="为热爱而设计。">Designed for play.</span></div>
+</footer>
+
+<!-- Scripts -->
+<script src="main.js"></script>
+</body>
+</html>
