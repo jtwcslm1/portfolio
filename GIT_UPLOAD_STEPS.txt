@@ -1,0 +1,67 @@
+========================================================
+用 VSCode + Git 把网站推到 GitHub（覆盖现在乱掉的版本）
+仓库：https://github.com/jtwcslm1/portfolio
+========================================================
+
+【准备】如果电脑还没装 Git：
+  去 https://git-scm.com/download/win 下载安装（一路 Next 默认即可），
+  装完重启一下 VSCode。
+
+--------------------------------------------------------
+第 0 步：把你的作品图片放进 gallery 文件夹（可选，但建议现在做）
+--------------------------------------------------------
+把你要展示的图片直接拷进解压出来的 gallery/ 文件夹里。
+  · 支持 jpg / jpeg / png / webp / gif / avif
+  · 文件名只用英文和数字，例如 art01.jpg、concept_city.png
+  · 不要用中文名、不要有空格
+（gallery/manifest.json 不用管，推上去后 GitHub 会自动重写它。）
+
+--------------------------------------------------------
+第 1 步：在 VSCode 里打开这个文件夹
+--------------------------------------------------------
+VSCode → File → Open Folder → 选中解压出来的 portfolio 文件夹。
+然后菜单 Terminal → New Terminal 打开终端（出现在下方）。
+
+--------------------------------------------------------
+第 2 步：把下面命令一行一行粘进终端，逐行回车
+--------------------------------------------------------
+（第一次用 git 如果提示设置身份，先跑前两行；设过就跳过）
+
+git config --global user.name "jtwcslm1"
+git config --global user.email "你的邮箱@example.com"
+
+git init
+git add .
+git commit -m "clean upload"
+git branch -M main
+git remote add origin https://github.com/jtwcslm1/portfolio.git
+git push -f origin main
+
+说明：
+  · 最后一行的 -f 是“强制覆盖”，会用你本地这份干净的版本
+    替换掉 GitHub 上现在乱掉的文件（这正是我们要的）。
+  · 推送时可能弹出登录窗口，用你的 GitHub 账号授权一下即可。
+  · 如果提示 "remote origin already exists"，把那一行 git remote add...
+    换成：  git remote set-url origin https://github.com/jtwcslm1/portfolio.git
+    然后继续跑 git push -f origin main
+
+--------------------------------------------------------
+第 3 步：等自动脚本跑完
+--------------------------------------------------------
+推送成功后：
+  1. 打开仓库的 Actions 标签，会看到 "Build gallery manifest" 在跑，
+     等它出现绿色对勾（约 1 分钟）。它会扫描 gallery/ 里的图、生成清单。
+  2. GitHub Pages 会重新部署（Actions 里还有个 pages build and deployment）。
+  3. 用无痕窗口打开 https://leilaone.com ，图片就出现了：
+       · 主页 Art & gallery 区显示最近的几张
+       · 点 “View the full gallery →” 看全部
+  4. 回 Settings → Pages 把 Enforce HTTPS 勾上（变 https 带小锁）。
+
+--------------------------------------------------------
+以后更新（加图 / 改东西）只要三行：
+--------------------------------------------------------
+git add .
+git commit -m "update"
+git push
+
+加图：把新图丢进 gallery/（英文名），跑上面三行，等一两分钟自动上线。
